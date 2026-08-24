@@ -3,24 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow:5px 15px 5px red;
+            margin-bottom: 15px;
+        }
+        .box2{
+             border: 2px solid black;
+            padding: 34px;
+            box-shadow:5px 15px 5px rgb(255, 166, 0);
+        }
+        .text-shadow{
+            text-shadow: 5px 15px 5px greenyellow;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index1.html">home</a></li>
-                <li><a href="aboutus.html">aboutus </a></li>
-                <li><a href="countactus.html">contactus</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>This is my semantic page</h1>
-    </main>
-    <footer>
-        copy Rights | All rights reserved
-    </footer>
+    <div class="box">
+        I am box.
+    </div> 
+    <div class="box2">
+        I am  anothere box
+    </div>
+    <br><br><br>
+    <p class="text-shadow">lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, pariatur.10 
+
+    </p>
+
 </body>
 </html>
