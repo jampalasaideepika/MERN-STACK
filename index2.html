@@ -3,59 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Animations</title>
-    <style>
-        .container{
-            background-color: pink;
-            height: 80vh;
-            width: 30vw;
-        }
-        .box{
-            height: 45px;
-            width: 34px;
-            /* animation-name: myanimation;
-            animation-duration:10s;
-            animation-iteration-count:3;
-            animation-timing-function:ease-in-out;
-            animation-delay:2s;
-            animation-direction:reverse; */
-            /* animation-play-state:paused; */
-            animation: myanimation2 3s ease-in-out 1s infinite,myanimation 1s ease-out 1s infinite alternate;
-            border-radius: 50px;   
-        }
-        @keyframes myanimation{
-            from{
-                background-color:seashell
-            }
-            to{
-                background-color:thistle;
-                transform:translateX(30vw) translateY(40vh);
-            }
-            
-        }
-        @keyframes myanimation2{
-              0%{
-                transform:rotate(100deg);
-            }
-            20%{
-                transform: rotate(200deg);
-            }
-            50%{
-                transform:rotate(220deg);
-            }
-            80%{
-                transform:rotate(300deg);
-            }
-            100%{
-                transform:rotate(310deg);
-            }
-        }
-    </style>    
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
+    <h1>user data collection</h1>
+     <form acting="post">
+        <div>
+        <label>name:</label>
+        <input id="username" type="text"name="username" placeholder="enter your full name">
         </div>
-    </div>
+        <div>
+       <label>gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <ladel for="male">Male</ladel>
+        <input type="radio" id="female" name="gender" value="female">
+        <ladel for="female">female</ladel>
+        </div>
+        <div>
+        <label>mobile:</label>
+       <input id="mobile" type="text"name="mobile" placeholder="enter your numder">
+        </div>
+        </div>
+        <div>
+        <lable>Gmail:</lable>
+        <input id="gmail"type="text"name="gamil" placeholder="enter your gmail">
+        </div>
+        <div>
+        <label>password:</label>
+        <input id="password"type="text"name="password" placeholder="enter your password">
+        </select>
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
 </body>
 </html>
