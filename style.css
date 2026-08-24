@@ -1,12 +1,3 @@
-body{
-    background-color: bisque;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.card{
-    width: 300px;
-    background-color: aquamarine;
-    border:1px solid
+td,th{
+    border: 1px solid black;
 }
