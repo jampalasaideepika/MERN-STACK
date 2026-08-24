@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css variable</title>
+    <title>Flex box</title>
     <style>
-        :root{
-            --color:rgb(168, 168, 28);
-            --defop:0.4;
-            --defpad:23px;
-            --seccolor:rgb(20, 156, 20);
-        }
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .nav{
-            background-color: var(--color);
-        }
-        ul{
+        .container{
             display:flex;
+            border:2px solid pink;
+            height:80vh;
+            /* justify-content:center; */
+            align-items:center;
+            /* flex-direction:column; */
+            align-content:flex-start;
         }
-        ul li{
-            list-style: none;;
-            opacity: var(--defop);
-            padding: var(--defpad);
-            border: 2px solid black;
-        }
-        ul li:first-child{
-            background-color: var(--seccolor);
+        .item{
+            height:92px;
+            width:92px;
+            background-color:cadetblue;
+            border:2px solid black;
+            margin:4px;
         }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>contact</li>
-        </ul>
-    </div>
     <div class="container">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae fugiat eligendi soluta vel sequi. Odio excepturi similique rerum deleniti quasi sequi iusto.
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
     </div>
-    
 </body>
 </html>

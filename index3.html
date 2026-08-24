@@ -1,36 +1,105 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>layout</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
         }
-         body{
-            background-color:bisque;
-         }
-        .boxes {
-            background-color: aqua;
+        header{
+            position:sticky;
+            top:0;
         }
-
-        @media only screen and (max-width:455px) {
-            body {
-                background-color: blueviolet;
-                color: turquoise;
-            }
+        nav{
+            background-color:rgb(153, 102, 119);
+            height:83px;
+        }
+        main{
+            background-color:burlywood;
+            color: black;
+            padding:34px
+        }
+        .container{
+            background-color:beige;
+            margin:12px 34px;
+            padding:55px 23px;
+            text-align:center;
+        }
+        .box1{
+            background-color:lightblue;
+            height:70vh;
+            width:45%;
+            margin: 0px 12px;
+            display:inline-block;
+        }
+        .box2{
+            background-color:pink;
+            height:70vh;
+            width:45%;
+            margin: 0px 12px;
+            display:inline-block;
+        }
+        .text-box{
+            padding:34px;
+            border:2px solid black;
+            margin:50px 34vw;
+            font-size:2em;
+            border-radius:13px;
+        }
+        .orange-box{
+            background:orange;
+            height:32px;
+            width:32px;
+            position:fixed;
+            bottom:12px;
+            right:23px;
+            border-radius:60px;
+        }
+        footer{
+            height:100px;
+            background-color:rgb(188, 143, 143);
+        }
+        ul{
+            display:flex;
+        }
+         ul li{
+            list-style:none;
+            opacity:0.5;
+            padding: 30px;
+        }
+        h1{
+            text-align:center;
         }
     </style>
 </head>
-
 <body>
-    <div class="boxs">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, ipsum? Veritatis quasi velit aspernatur
-        eligendi, modi nisi eos rerum nulla rem vero illo!
-    </div>
-</body>
+    <header>
+        <nav>
+             <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+             </ul>
+        </nav>
 
+    </header>
+    <main>
+        <h1>THIS IS MY LAYOUT PAGE</h1>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="text-box">
+                <p>hello guys!</p>
+            </div>
+        </div>
+        <div class="orange-box">
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
 </html>
