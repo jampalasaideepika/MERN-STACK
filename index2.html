@@ -3,43 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fonts</title>
+    <title>sizes and values</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
-        h1{ 
-            font-family: 'Baloo Bhai 2',cursive;
+        *{
+            margin: 0;
+            padding: 0;
         }
-        p{
-            font-size: 20px;
-            font-style: italic;
-            font-weight: 600;
+        .box{
+            border:2px solid pink;
+            /* width: 500px; */
+            width: 80vw;
+            height: 10vh;
+            margin:23px auto;
+            box-sizing:border-box;
+            background-color: aquamarine;
         }
-        h2{
-            text-align: center;
-            text-transform: uppercase;
-            text-decoration:underline;
-            text-decoration-style:wavy;
-            text-decoration-color: aqua;
-            text-decoration-thickness:5px;
-            text-indent:50px;
+        .container{
+            border:2px solid red;
+            width: 80vw;
+            height: 10vh;
+            margin: 23px auto;
+            /* box-sizing: border-box; */
+            background-color: yellow;
+            min-height: 80vh;
+            font-size: 18px;
         }
-        .lorem{
+        .container >div{
+            font-size: 2em;
             border: 2px solid pink;
-            width: 145px;
-            /* word-break: break-all; */
-            text-overflow: ellipsis;
-            overflow:hidden;
+            width: 50%;
         }
+        .container>div>div{
+            border: 2px solid aqua;
+            widht: 50%;
+        }
+        .mycont{
+            border: 2px solid #d6c0ff;
+            width: 80vw;
+            margin: 23px auto;
+            box-sizing: border-box;
+            background-color: rgb(255, 204, 127);
+            font-size: 22px;;
+        }
+
     </style>
 </head>
 <body>
+    <div class="box">
+        This is a box        
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima officia impedit ea esse magnam? Rem eligendi atque ea quod doloribus iste tempora provident cupiditate vero, nam repellat nulla officia fuga porro ex, explicabo ducimus. Explicabo esse tenetur at enim, dignissimos qui laudantium quisquam deserunt quo non ipsam nihil facilis porro, accusamus quas ea eum nesciunt magni quis magnam dolores doloremque aspernatur odit dolor. Soluta aperiam nam esse, iusto minima quidem nesciunt! Eligendi accusamus error molestias minus repudiandae exercitationem iure eaque. Voluptatibus, quia sapiente vero iste assumenda autem et! Vel consectetur consequatur quos vero aspernatur, minima quisquam placeat repellendus saepe nesciunt, deleniti asperiores reprehenderit porro expedita dolores soluta sit enim quibusdam! Debitis, praesentium magnam modi, enim sequi odio impedit fugit esse minima est officia consequuntur suscipit itaque nisi neque ullam nulla nobis, iusto aperiam. Maxime maiores iusto dignissimos fugit nostrum laudantium quidem reiciendis minus voluptates. Consectetur fuga numquam voluptas in laborum, eius tenetur? Earum quidem doloribus fuga, temporibus, ratione aut numquam nisi neque ipsam impedit illo nostrum officia illum quaerat esse ab praesentium possimus quas officiis iste similique at dolorum excepturi nesciunt? Molestias cum repudiandae maiores blanditiis nemo, repellendus fugit consectetur tempore ex mollitia numquam, cupiditate praesentium ut deleniti fuga at debitis tenetur minus corporis harum eaque! Hic quidem quod obcaecati ipsa eaque tempore doloremque velit earum adipisci. Optio iure atque harum quae odit voluptas, consequatur error consequuntur ex? Tenetur consequatur dolor quis suscipit, tempora aut assumenda a excepturi cupiditate iure consectetur numquam iusto quo facilis odit voluptates officia hic magni corrupti sed fuga amet. Molestiae unde suscipit, aut ipsam ab at illum, qui quae nemo, eaque placeat ipsum labore. Officia, nostrum quisquam. Quibusdam delectus illum culpa, incidunt fugiat a repudiandae quaerat ad veritatis velit alias quo hic dicta. Maxime architecto libero ex iusto, quis animi blanditiis perspiciatis, consequuntur, modi officiis explicabo numquam. Dolor incidunt harum ullam ut aut consectetur itaque, soluta saepe odio odit repellat commodi voluptatibus ratione excepturi autem esse alias qui laudantium quae cumque blanditiis error sunt quasi. Quos dicta id optio asperiores. Nihil dicta, aspernatur obcaecati aperiam magnam dignissimos in asperiores soluta, reprehenderit blanditiis deleniti, quidem ullam vel ducimus fuga repudiandae vitae repellat ipsum animi labore! Omnis corrupti sapiente officia nihil ab dolor quidem id dicta! Expedita odit repellendus perferendis alias aut iste atque vero, fuga laboriosam omnis eos mollitia ut dolorum esse? Libero amet, culpa quae vitae dolore quia id, voluptates quo fugiat ipsum cum dignissimos.
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, provident nemo? Incidunt quidem, saepe voluptatum ducimus reiciendis nobis delectus eligendi quae voluptates minima molestiae. Minus doloremque velit sequi ea ex unde architecto excepturi dicta, optio ducimus, placeat a tempora laudantium, facilis quia repudiandae odit!
+            </div>
+        </div>
+    </div>
     <div>
-    <h1>fonts</h1>
-    <h2> About fonts</h2>
-    <p>This is a paragraph</p>
-    <p class="lorem">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quasi dolore quod cum qui deserunt molestias officiis ex assumenda hic recusandae eos, facere vel fuga!
-        
-        </p>
-    </body>
+        <div class="mycont">
+            I am another container.
+        </div>
+    </div>
+</body>
 </html>

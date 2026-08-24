@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>css display property</title>
     <style>
-        span{
-            background-color: #4e2e14;
+        *{ 
+           margin: 0;
+           padding: 0; 
         }
-        div{ 
-            background-color: #e22b2b;
+        .box{
+            border: 2px solid yellowgreen;
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+            display: inline-block;
         }
+        .box1{
+            /* display: none; */
+            /* visibility:hidden; */
+        }
+        
     </style>
-    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <h1 style="color:#00ffff; background-color:hsl(202, 58%, 45%)">This is my style page</h1>
-    <div>
-        hey how are you
+    <div class="box">
+        I am a box.
     </div>
-    <div>
-        how its going
+    <div class="box box1">It is a box also.</div>
+    <span>I am a good</span>
+    <span>speaker.</span>
+    <div class="box box2">
+         I am another box
     </div>
-    <div>
-    <span>    
-       i am genuinely good
-       <p>yrid67yuyh7k8</p>
-    </span>
-    </div>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia fugiat, repellat harum voluptatibus magni maxime facere quidem placeat, illum non pariatur. Quos praesentium ad facilis recusandae aut est sunt quae adipisci dolore, porro suscipit, quidem nobis! Voluptas ut quos quis cumque aperiam, nobis omnis numquam tempora dicta at.</p>
 </body>
 </html>
