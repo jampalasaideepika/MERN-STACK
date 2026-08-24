@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on Css selector</title>
+    <style>
+        .box:first-child{
+            background-color:pink;
+        }
+        .box::first-line{
+            color:aquamarine;
+        }
+        .boxes *{
+            color:yellow;
+            border:2px solid rgb(196, 25, 119);
+    }
+    .boxes::before{
+        content:"you are bad";
+        color:cadetblue;
+    }
+    .boxes::after{
+        content:"you are good";
+        color:#23d0da;
+    }
+    .box::first-letter{
+        color:rgb(194, 197, 3);
+        font-size:40px;
+    }
+    input::placeholder{
+        color:royalblue;
+    }
+    ::selection{
+        background-color:steelblue;
+        color:deeppink;
+    }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box"> I am first box.</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <input type="text" placeholder="enter your name">
+    </div>
+</body>
+</html>

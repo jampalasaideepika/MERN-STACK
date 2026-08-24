@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>overflow</title>
+    <title>Document</title>
     <style>
-        .box{
-            border: 2px solid pink;
-            height:30vh;
-            width: 20vw;
-            /* overflow: scroll; */
-            /* overflow: auto;
-            overflow-x: hidden;
-            overflow-y: scroll; */
-            overflow: auto hidden;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+         body{
+            background-color:bisque;
+         }
+        .boxes {
+            background-color: aqua;
+        }
+
+        @media only screen and (max-width:455px) {
+            body {
+                background-color: blueviolet;
+                color: turquoise;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="box">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non delectus praesentium aut vitae, minima rem eveniet harum itaque voluptates sed atque exercitationem ex inventore odit officiis ratione ut, doloribus adipisci officia corporis nam veritatis. Labore iure minus quia, repudiandae laboriosam perspiciatis eaque!
+    <div class="boxs">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, ipsum? Veritatis quasi velit aspernatur
+        eligendi, modi nisi eos rerum nulla rem vero illo!
     </div>
 </body>
+
 </html>

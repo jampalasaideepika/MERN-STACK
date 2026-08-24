@@ -3,26 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css list styling</title>
-    <style>
-        nav ul li{
-            list-style: devanagari;
-            list-style-type: "🐻";
-            background-color: bisque;
-            list-style-position: inside;
-            border: 2px solid chocolate;
-            /* list-style:disc inside url(https://media1.tenor.com/m/BEAUhyVkEtYAAAAC/gf.gif) */
-            /* list-style-image: url(https://tse1.mm.bing.net/th/id/OIP.dJjxVbXqQ0UIjAxZDXNNAgHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3) */
+    <title>Css media query</title>
+    <style> 
+       body{
+        background-color: yellow;
+       }
+        @media screen and (orientation:portrait){
+            body{
+                border: 2px solid blue;
+            }
+        }
+        @media only screen and (max-width:455px){
+        body{
+            background-color:blueviolet;
+            color:turquoise;
+        }
+        .boxes{
+             flex-direction:column;
+        }
+        }
+        .boxes{
+            display:flex;
+        }
+        .box{
+            background-color: pink;
+            height: 344px;
+            width: 344px;
+            padding: 3px;
+            margin: 3px;
         }
     </style>
 </head>
 <body>
-  <nav>
-     <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>contact</li>
-     </ul>
-     </nav>
+    <div>
+        hey i am a red boby guy!
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
 </body>
 </html>

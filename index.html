@@ -3,26 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>specificity</title>
-    <style> 
-      h1{
-        background-color:aquamarine;
-      }
-      #h1{
-        background-color: #cdfffb;
-      }
-      .yellow{
-        background-color: #c4f6ff;
-      }
-      ,red{
-        background-color: pink;
-      }
-
+    <title>Css variable</title>
+    <style>
+        :root{
+            --color:rgb(168, 168, 28);
+            --defop:0.4;
+            --defpad:23px;
+            --seccolor:rgb(20, 156, 20);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display:flex;
+        }
+        ul li{
+            list-style: none;;
+            opacity: var(--defop);
+            padding: var(--defpad);
+            border: 2px solid black;
+        }
+        ul li:first-child{
+            background-color: var(--seccolor);
+        }
     </style>
 </head>
 <body>
-    <div>
-        <h1 class="yellow red purple" id="h1"> css spicificity</h1>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
     </div>
+    <div class="container">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quae fugiat eligendi soluta vel sequi. Odio excepturi similique rerum deleniti quasi sequi iusto.
+    </div>
+    
 </body>
 </html>
