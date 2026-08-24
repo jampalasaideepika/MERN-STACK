@@ -1,0 +1,100 @@
+// let str = "hello guys";
+// console.log(str.length);
+
+// let str1 = "good";
+// let str2 = "mrng";
+// console.log(str1.concat(str2));
+
+// let text = "have a nice day"
+// console.log(text.indexOf("n"));
+
+// let str = "hello world";
+// console.log(str.slice(6));
+// console.log(str.slice(0,5));
+
+// let sentence = "hello world";
+// console.log(sentence.replace("world","universe"));
+
+// let msg = "apple apple apple";
+// console.log(msg.replace(/apple/g,"banana"));
+
+
+// let greeting = "deepika";
+// console.log(greeting.toUpperCase());
+// console.log(greeting.toLowerCase());
+
+// // let name = "    yamohan    ";
+// // console.log(name.trim());
+
+
+// let colors = "red,blue,green";
+// console.log(colors.split(","));
+
+// let str3 = " this isn't good";
+// console.log(str3.slice(0,16));
+
+
+
+// let message = `hello world!`;
+// console.log(message);
+
+
+// let name = "abhinav";
+// let greeting = "hello, " + name + "! welcome to javascript.";
+// console.log(greeting);
+
+// let a=10
+// let b=5
+// let c=a+b
+// console.log(`the sum of ${a} and ${b} is ${c}`);
+
+
+// let oldway = "This si line 1. \n" +
+//               "This si line2. \n" +
+//               "This is line3.";
+// console.log(oldway);
+
+
+
+let oldway = `This si line 1.
+              This si line2. 
+              This is line3.`;
+console.log(oldway);
+    
+    
+let name = "abhinav";
+let age  = 22;
+
+let html = `
+<div>
+<h2>${name}</h2>
+<p>age: ${age}</p>
+</div>
+`;
+console.log(html);
+
+
+    
+    var myarray = [1,"hello",[2,3]];
+    myarray.splice(1,1, "hello world", [4,5]);
+    console.log(myarray);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
