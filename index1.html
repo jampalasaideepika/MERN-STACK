@@ -3,39 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box shadow and Text shadow</title>
+    <title>CSS Transitions</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        .container{
+            background-color:pink;
+            height: 40vh;
+            width: 50vw;
         }
         .box{
-            border: 2px solid black;
-            padding: 34px;
-            box-shadow:5px 15px 5px red;
-            margin-bottom: 15px;
+            background-color:aqua;
+            height: 5vw;
+            width: 4vh;
+            /* transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+            transition: all 3s ease-in-out 1s;
         }
-        .box2{
-             border: 2px solid black;
-            padding: 34px;
-            box-shadow:5px 15px 5px rgb(255, 166, 0);
-        }
-        .text-shadow{
-            text-shadow: 5px 15px 5px greenyellow;
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: blue;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        I am box.
-    </div> 
-    <div class="box2">
-        I am  anothere box
+    <div class="container">
+        <div class="box translate">
+
+        </div>
     </div>
-    <br><br><br>
-    <p class="text-shadow">lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, pariatur.10 
-
-    </p>
-
 </body>
 </html>
