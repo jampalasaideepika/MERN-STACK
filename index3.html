@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .red{
-            color:red;
-        }
-    </style>
 </head>
 <body>
-    <div class="container red bg-green">
-        <div class="box" style="display:flex;">Hey i am a box</div>
-        <div class="box">Hey i am a box</div>
+    <!-- <button id="btn" onClick="alert('button clicked')">Click me</button>
+    <button id="btn" onClick="myFunction()">Click me</button> -->
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
     </div>
+    <button id="btn">Click me</button>
     <script>
-        let div=document.createElement("div");
-        div.innerHTML="I have been added <b>you</b>"
-        div.setAttribute("class","created");
-        document.querySelector(".container").after(div);
+        function myFunction(){
+            alert("yes its working");
+        }
     </script>
+    <script src="script2.js"></script>
+</body>
 </body>
 </html>

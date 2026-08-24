@@ -1,10 +1,12 @@
-let boxes=document.getElementsByClassName("box");
-console.log(boxes)
-boxes[2].style.backgroundColor="aqua";
-document.getElementById("lightgreen") .style.backgroundColor="lightgreen";
-document.querySelector(".box").style.backgroundColor="royalblue";
-console.log(document.querySelectorAll(".box"));    
-document.querySelectorAll(".box")[1].style.backgroundColor="grey";
-document.querySelectorAll(".box").forEach(e=>{
-    e.style.backgroundColor="lightyellow";
+let boxes=document.querySelector(".container").children
+function getRandomColor(){
+    let val1=Math.ceil(0+Math.random()*255);
+    let val2=Math.ceil(0+Math.random()*255);
+    let val3=Math.ceil(0+Math.random()*255);
+    return`rgb(${val1},${val1},${val3})`
+}
+Array.from(boxes).forEach((e)=>{
+    e.style.backgroundColor=getRandomColor(); 
+    e.style.color=getRandomColor();
+
 })
